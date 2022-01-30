@@ -1,9 +1,263 @@
-footer > .attribution {
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,600;1,400&display=swap");
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+body main {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  margin-top: -7px;
+  height: 100vh;
+}
+
+body main > .main__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+body main > .main__top > img {
+  height: 100px;
+  width: 100px;
+}
+
+body main > .main__top > .article__one {
+  max-width: 50%;
+}
+
+body main > .main__top > .article__one > h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.7rem;
+}
+
+body main > .main__top > .article__one > p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+}
+
+body main > .main__top > .button__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
+  gap: 1rem;
+}
+
+body main > .main__top > .button__flex > a {
+  text-decoration: none;
+  height: 40px;
+  width: 200px;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+body main > .main__top > .button__flex > .button__one {
+  background-color: var(--strong-cyan);
+}
+
+body main > .main__top > .button__flex > .button__two {
+  background-color: var(--light-blue);
+}
+
+body main > .main__top > .article__two {
+  max-width: 55vw;
+  padding-bottom: 2rem;
+}
+
+body main > .main__top > .article__two > h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.7rem;
+}
+
+body main > .main__top > .article__two > p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+}
+
+body main > .main__mid1 > .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  width: 90%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main > .main__mid1 > .flex > img {
+  height: 80%;
+  width: 70%;
+  margin-left: -60px;
+}
+
+body main > .main__mid1 > .flex > .column {
+  margin-top: 90px;
+  max-width: 30%;
+  max-height: 80vh;
+}
+
+body main > .main__mid1 > .flex > .column > h1 {
+  color: var(--dark-grayish-blue);
+}
+
+body main > .main__mid1 > .flex > .column > p {
+  color: var(--grayish-blue);
+}
+
+body main > .main__mid2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body main > .main__mid2 > .article__three {
+  max-width: 55vw;
+  padding-bottom: 2rem;
+}
+
+body main > .main__mid2 > .article__three > h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.7rem;
+}
+
+body main > .main__mid2 > .article__three > p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+}
+
+body main > .main__mid2 > img {
+  max-width: 70%;
+}
+
+body main > .main__mid2 > .article__four {
+  max-width: 55vw;
+  padding-bottom: 2rem;
+}
+
+body main > .main__mid2 > .article__four > h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.7rem;
+}
+
+body main > .main__mid2 > .article__four > p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+}
+
+body main > .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+  height: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body main > .flex > .flex__one {
+  margin-top: 10px;
+}
+
+body main > .flex > .block {
+  max-width: 500px;
+}
+
+body main > .flex > .block > h1 {
+  color: var(--dark-grayish-blue);
+}
+
+body main > .flex > .block > p {
+  color: var(--grayish-blue);
+  max-width: 400px;
+}
+
+body main > .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main > footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+body main > footer > .attribution {
   font-size: 11px;
   text-align: center;
 }
 
-footer > .attribution a {
+body main > footer > .attribution a {
   color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
