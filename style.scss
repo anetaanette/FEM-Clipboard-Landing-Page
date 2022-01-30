@@ -146,11 +146,14 @@ body {
     }
     > .flex {
       display: flex;
-      max-width: 80%;
+      flex: 1;
+      flex-shrink: 1;
+      width: 95%;
       height: 40%;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
+      padding: 100px;
+      gap: 2rem;
       text-align: center;
       > .flex__one {
         margin-top: 10px;
@@ -168,24 +171,97 @@ body {
       }
     }
     > .logos {
+      max-width: 90%;
       display: flex;
-      gap: 3.5rem;
+      gap: 2.4rem;
+      margin: 0 auto;
       justify-content: center;
       align-items: center;
+      padding: 80px;
+      > img {
+        width: 120px;
+        height: 30px;
+      }
+    }
+    > .bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 50px;
+      > .article__five {
+        max-width: 55vw;
+        padding-bottom: 2rem;
+        > h1 {
+          color: var(--dark-grayish-blue);
+          font-size: 1.7rem;
+        }
+        > p {
+          color: var(--grayish-blue);
+          font-size: 1.1rem;
+        }
+      }
+
+      > .button__flex {
+        display: flex;
+        padding-bottom: 60px;
+        gap: 1rem;
+        > a {
+          text-decoration: none;
+          height: 40px;
+          width: 200px;
+          color: white;
+          border-radius: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+          padding: 0.5rem;
+          text-align: center;
+        }
+        > .button__one {
+          background-color: var(--strong-cyan);
+        }
+        > .button__two {
+          background-color: var(--light-blue);
+        }
+      }
     }
     > footer {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      > .attribution {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
+      min-width: 90%;
+      height: 140px;
+      padding: 20px;
+      margin-left: -10px;
+      color: var(--dark-grayish-blue);
+      background-color: hsl(202, 21%, 93%);
+      > .footer__one {
+        > .logo {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      > .footer__two {
+        display: flex;
+        > ul {
+          list-style-type: none;
+        }
+      }
+      > .footer__one {
+        > .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      /* > .attribution {
         font-size: 11px;
         text-align: center;
       }
       > .attribution a {
         color: hsl(228, 45%, 44%);
-      }
+      } */
     }
   }
 }
