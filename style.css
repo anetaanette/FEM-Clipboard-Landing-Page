@@ -23,6 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 body main {
@@ -57,6 +58,7 @@ body main > .main__top > img {
 
 body main > .main__top > .article__one {
   max-width: 50%;
+  padding-bottom: 1.5rem;
 }
 
 body main > .main__top > .article__one > h1 {
@@ -79,25 +81,32 @@ body main > .main__top > .button__flex {
 
 body main > .main__top > .button__flex > a {
   text-decoration: none;
-  height: 40px;
+  height: 50px;
   width: 200px;
   color: white;
   border-radius: 2rem;
   font-size: 1rem;
-  padding: 0.5rem;
+  font-weight: 600;
+  padding: 0.7rem;
   text-align: center;
 }
 
 body main > .main__top > .button__flex > .button__one {
   background-color: var(--strong-cyan);
+  border-bottom: 3px solid #149985;
+  -webkit-box-shadow: 0 0.4rem 1rem #26baa4;
+          box-shadow: 0 0.4rem 1rem #26baa4;
 }
 
 body main > .main__top > .button__flex > .button__two {
   background-color: var(--light-blue);
+  border-bottom: 3px solid #4e5cc6;
+  -webkit-box-shadow: 0 0.4rem 1rem #9ba2ab;
+          box-shadow: 0 0.4rem 1rem #9ba2ab;
 }
 
 body main > .main__top > .article__two {
-  max-width: 55vw;
+  max-width: 53vw;
   padding-bottom: 2rem;
 }
 
@@ -127,9 +136,9 @@ body main > .main__mid1 > .flex {
 }
 
 body main > .main__mid1 > .flex > img {
-  height: 80%;
-  width: 70%;
-  margin-left: -60px;
+  height: 83%;
+  width: 60%;
+  margin-left: -10%;
 }
 
 body main > .main__mid1 > .flex > .column {
@@ -165,7 +174,8 @@ body main > .main__mid2 {
 
 body main > .main__mid2 > .article__three {
   max-width: 55vw;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 body main > .main__mid2 > .article__three > h1 {
@@ -300,22 +310,28 @@ body main > .bottom > .button__flex {
 
 body main > .bottom > .button__flex > a {
   text-decoration: none;
-  height: 40px;
+  height: 50px;
   width: 200px;
   color: white;
   border-radius: 2rem;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.7rem;
   text-align: center;
 }
 
 body main > .bottom > .button__flex > .button__one {
   background-color: var(--strong-cyan);
+  border-bottom: 3px solid #149985;
+  -webkit-box-shadow: 0 0.4rem 1rem #26baa4;
+          box-shadow: 0 0.4rem 1rem #26baa4;
 }
 
 body main > .bottom > .button__flex > .button__two {
   background-color: var(--light-blue);
+  border-bottom: 3px solid #4e5cc6;
+  -webkit-box-shadow: 0 0.4rem 1rem #9ba2ab;
+          box-shadow: 0 0.4rem 1rem #9ba2ab;
 }
 
 body main > footer {
@@ -329,19 +345,11 @@ body main > footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 90%;
   height: 140px;
   padding: 20px;
   margin-left: -10px;
   color: var(--dark-grayish-blue);
   background-color: #e9eef1;
-  /* > .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      > .attribution a {
-        color: hsl(228, 45%, 44%);
-      } */
 }
 
 body main > footer > .footer__one > .logo {
@@ -353,13 +361,37 @@ body main > footer > .footer__two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 3rem;
+  margin-right: 150px;
 }
 
 body main > footer > .footer__two > ul {
   list-style-type: none;
 }
 
-body main > footer > .footer__one > .icon {
+body main > footer > .footer__two > ul .margin {
+  margin-bottom: 0.8rem;
+}
+
+body main > footer > .footer__two > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+body main > footer > .footer__three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+body main > footer > .footer__three > .icon {
   width: 20px;
   height: 20px;
 }
