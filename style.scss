@@ -100,7 +100,7 @@ body {
         justify-content: center;
         align-items: center;
         > img {
-          max-height: 83%;
+          //max-height: 83%;
           max-width: 60%;
           margin-left: -10%;
         }
@@ -154,7 +154,7 @@ body {
     }
     > .flex {
       box-sizing: border-box;
-      display: flex;
+      display: inline-flex;
       flex: 1;
       flex-shrink: 1;
       width: 95%;
@@ -165,11 +165,16 @@ body {
       margin: 0 auto;
       gap: 2rem;
       text-align: center;
+
       > .block {
         box-sizing: border-box;
         max-width: 500px;
         margin: 0 auto;
+        vertical-align: top;
         //height: 100px;
+        > img {
+          height: 50px;
+        }
         > h1 {
           color: var(--dark-grayish-blue);
           //max-width: 500px;
@@ -180,7 +185,7 @@ body {
         }
       }
       > .flex__one {
-        margin-bottom: 50px;
+        //margin-bottom: 50px;
       }
     }
     > .logos {
@@ -290,10 +295,18 @@ body {
 .button__one:hover {
   transform: rotate(360deg);
   transition: 0.4s;
+  opacity: 0.8;
 }
 .button__two:hover {
   transform: rotate(360deg);
   transition: 0.4s;
+}
+.footer__two {
+  > ul {
+    > li:hover {
+      color: var(--strong-cyan);
+    }
+  }
 }
 
 @media all and (max-width: 500px) {

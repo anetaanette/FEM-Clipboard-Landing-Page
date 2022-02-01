@@ -136,7 +136,6 @@ body main > .main__mid1 > .flex {
 }
 
 body main > .main__mid1 > .flex > img {
-  max-height: 83%;
   max-width: 60%;
   margin-left: -10%;
 }
@@ -210,9 +209,9 @@ body main > .main__mid2 > .article__four > p {
 body main > .flex {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -231,6 +230,11 @@ body main > .flex > .block {
           box-sizing: border-box;
   max-width: 500px;
   margin: 0 auto;
+  vertical-align: top;
+}
+
+body main > .flex > .block > img {
+  height: 50px;
 }
 
 body main > .flex > .block > h1 {
@@ -240,10 +244,6 @@ body main > .flex > .block > h1 {
 body main > .flex > .block > p {
   color: var(--grayish-blue);
   max-width: 400px;
-}
-
-body main > .flex > .flex__one {
-  margin-bottom: 50px;
 }
 
 body main > .logos {
@@ -401,6 +401,7 @@ body main > footer > .footer__three > .icon {
           transform: rotate(360deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  opacity: 0.8;
 }
 
 .button__two:hover {
@@ -408,6 +409,10 @@ body main > footer > .footer__three > .icon {
           transform: rotate(360deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.footer__two > ul > li:hover {
+  color: var(--strong-cyan);
 }
 
 @media all and (max-width: 500px) {
