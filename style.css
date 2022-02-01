@@ -23,6 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  background-color: white;
   font-family: "Bai Jamjuree", sans-serif;
 }
 
@@ -219,7 +220,8 @@ body main > .flex {
       flex-shrink: 1;
   width: 95%;
   height: 40%;
-  padding: 100px;
+  padding: 80px;
+  padding-top: 50px;
   margin: 0 auto;
   gap: 2rem;
   text-align: center;
@@ -247,12 +249,11 @@ body main > .flex > .block > p {
 }
 
 body main > .logos {
-  max-width: 90%;
+  max-width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2.4rem;
-  margin: 0 auto;
+  gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -263,7 +264,7 @@ body main > .logos {
 }
 
 body main > .logos > img {
-  width: 120px;
+  width: 130px;
   height: 30px;
 }
 
@@ -397,18 +398,19 @@ body main > footer > .footer__three > .icon {
 }
 
 .button__one:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0.8;
 }
 
 .button__two:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  opacity: 0.8;
 }
 
 .footer__two > ul > li:hover {
@@ -421,6 +423,7 @@ body main > footer > .footer__three > .icon {
   }
   body main {
     max-width: 500px;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -456,6 +459,54 @@ body main > footer > .footer__three > .icon {
   }
   body main > .main__mid1 .flex > img {
     padding-top: 170px;
+  }
+  body main > .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main > .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main > footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 50px;
+    max-width: 500px;
+  }
+  body main > footer > .footer__two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+  body main > footer > .footer__three {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

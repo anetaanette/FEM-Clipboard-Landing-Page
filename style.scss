@@ -23,6 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  background-color: white;
   font-family: "Bai Jamjuree", sans-serif;
   main {
     background-image: url(images/bg-header-desktop.png);
@@ -100,7 +101,6 @@ body {
         justify-content: center;
         align-items: center;
         > img {
-          //max-height: 83%;
           max-width: 60%;
           margin-left: -10%;
         }
@@ -159,45 +159,37 @@ body {
       flex-shrink: 1;
       width: 95%;
       height: 40%;
-      //justify-content: center;
-      //align-items: center;
-      padding: 100px;
+      padding: 80px;
+      padding-top: 50px;
       margin: 0 auto;
       gap: 2rem;
       text-align: center;
-
       > .block {
         box-sizing: border-box;
         max-width: 500px;
         margin: 0 auto;
         vertical-align: top;
-        //height: 100px;
         > img {
           height: 50px;
         }
         > h1 {
           color: var(--dark-grayish-blue);
-          //max-width: 500px;
         }
         > p {
           color: var(--grayish-blue);
           max-width: 400px;
         }
       }
-      > .flex__one {
-        //margin-bottom: 50px;
-      }
     }
     > .logos {
-      max-width: 90%;
+      max-width: 95%;
       display: flex;
-      gap: 2.4rem;
-      margin: 0 auto;
+      gap: 2rem;
       justify-content: center;
       align-items: center;
       padding: 80px;
       > img {
-        width: 120px;
+        width: 130px;
         height: 30px;
       }
     }
@@ -293,13 +285,14 @@ body {
 }
 
 .button__one:hover {
-  transform: rotate(360deg);
+  transform: rotate(10deg);
   transition: 0.4s;
   opacity: 0.8;
 }
 .button__two:hover {
-  transform: rotate(360deg);
+  transform: rotate(10deg);
   transition: 0.4s;
+  opacity: 0.8;
 }
 .footer__two {
   > ul {
@@ -314,6 +307,7 @@ body {
     height: 100%;
     main {
       max-width: 500px;
+      height: 100%;
       display: flex;
       flex-direction: column;
       > .main__top {
@@ -336,6 +330,34 @@ body {
         }
       }
       > .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      > .logos {
+        display: flex;
+        flex-direction: column;
+      }
+      > footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 50px;
+        max-width: 500px;
+        > .footer__two {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          margin: 0 auto;
+          padding: 0;
+          //justify-content: center;
+          //align-items: center;
+          // margin: 0 auto;
+        }
+        > .footer__three {
+          margin: 0 auto;
+        }
       }
     }
   }
