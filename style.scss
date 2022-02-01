@@ -159,13 +159,16 @@ body {
       flex-shrink: 1;
       width: 95%;
       height: 40%;
-      justify-content: center;
-      align-items: center;
+      //justify-content: center;
+      //align-items: center;
       padding: 100px;
+      margin: 0 auto;
       gap: 2rem;
       text-align: center;
       > .block {
+        box-sizing: border-box;
         max-width: 500px;
+        margin: 0 auto;
         //height: 100px;
         > h1 {
           color: var(--dark-grayish-blue);
@@ -177,7 +180,7 @@ body {
         }
       }
       > .flex__one {
-        margin-top: 12px;
+        margin-bottom: 50px;
       }
     }
     > .logos {
@@ -282,6 +285,15 @@ body {
       }
     }
   }
+}
+
+.button__one:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+.button__two:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
 }
 
 @media all and (max-width: 500px) {
