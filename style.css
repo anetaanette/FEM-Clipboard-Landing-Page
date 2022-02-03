@@ -406,8 +406,8 @@ body main > footer > .footer__three > .icon {
 }
 
 .button__two:hover {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0.8;
@@ -415,14 +415,31 @@ body main > footer > .footer__three > .icon {
 
 .footer__two > ul > li:hover {
   color: var(--strong-cyan);
+  cursor: pointer;
+}
+
+.footer__three .icon:hover {
+  cursor: pointer;
 }
 
 @media all and (max-width: 500px) {
   body {
-    height: 100%;
+    height: 110%;
+    width: 99%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main {
-    max-width: 500px;
+    padding: 0;
+    margin: 0 auto;
+    width: 99%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -431,6 +448,9 @@ body main > footer > .footer__three > .icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body main > .main__top {
+    width: 100%;
   }
   body main > .main__top > .button__flex {
     display: -webkit-box;
@@ -441,7 +461,49 @@ body main > footer > .footer__three > .icon {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main > .main__mid1 .flex {
+  body main > .main__top > .article__two {
+    padding-bottom: 100px;
+  }
+  body main > .main__mid1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main > .main__mid1 > .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  body main > .main__mid2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 300px;
+  }
+  body main > .main__mid2 > .article__three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main > .flex {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -456,11 +518,9 @@ body main > footer > .footer__three > .icon {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+    height: 400px;
   }
-  body main > .main__mid1 .flex > img {
-    padding-top: 170px;
-  }
-  body main > .flex {
+  body main > .flex > .block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,7 +529,24 @@ body main > footer > .footer__three > .icon {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body main > .flex > .block > img {
+    width: 60px;
+    height: 40px;
+    margin: 0 auto;
+  }
   body main > .logos {
+    padding: 0;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main > .bottom > .button__flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -490,7 +567,7 @@ body main > footer > .footer__three > .icon {
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 50px;
+    padding: 100px;
     max-width: 500px;
   }
   body main > footer > .footer__two {
@@ -502,8 +579,8 @@ body main > footer > .footer__three > .icon {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
-    margin: 0 auto;
     padding: 0;
+    margin: 0 auto;
   }
   body main > footer > .footer__three {
     margin: 0 auto;

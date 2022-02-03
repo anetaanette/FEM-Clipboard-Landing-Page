@@ -290,7 +290,7 @@ body {
   opacity: 0.8;
 }
 .button__two:hover {
-  transform: rotate(10deg);
+  transform: rotate(-10deg);
   transition: 0.4s;
   opacity: 0.8;
 }
@@ -298,44 +298,91 @@ body {
   > ul {
     > li:hover {
       color: var(--strong-cyan);
+      cursor: pointer;
     }
+  }
+}
+.footer__three {
+  .icon:hover {
+    cursor: pointer;
   }
 }
 
 @media all and (max-width: 500px) {
   body {
-    height: 100%;
+    height: 110%;
+    width: 99%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     main {
-      max-width: 500px;
+      padding: 0;
+      margin: 0 auto;
+      width: 99%;
       height: 100%;
       display: flex;
       flex-direction: column;
       > .main__top {
+        width: 100%;
         > .button__flex {
           display: flex;
           flex-direction: column;
         }
+        > .article__two {
+          padding-bottom: 100px;
+        }
       }
+
       > .main__mid1 {
-        .flex {
+        display: flex;
+        flex-direction: column;
+        > .flex {
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin: auto;
-          // FIX THE SCREEN IMG
-          > img {
-            padding-top: 170px;
-          }
+          margin: 0 auto;
+        }
+      }
+      > .main__mid2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 300px;
+        > .article__three {
+          display: flex;
+          flex-direction: column;
         }
       }
       > .flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 400px;
+        > .block {
+          display: flex;
+          flex-direction: column;
+
+          > img {
+            width: 60px;
+            height: 40px;
+            margin: 0 auto;
+          }
+        }
+      }
+      > .logos {
+        padding: 0;
+        padding-bottom: 50px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
       }
-      > .logos {
-        display: flex;
-        flex-direction: column;
+      > .bottom {
+        > .button__flex {
+          display: flex;
+          flex-direction: column;
+        }
       }
       > footer {
         display: flex;
@@ -343,17 +390,14 @@ body {
         height: auto;
         text-align: center;
         box-sizing: border-box;
-        padding: 50px;
+        padding: 100px;
         max-width: 500px;
         > .footer__two {
           display: flex;
           flex-direction: column;
           gap: 0;
-          margin: 0 auto;
           padding: 0;
-          //justify-content: center;
-          //align-items: center;
-          // margin: 0 auto;
+          margin: 0 auto;
         }
         > .footer__three {
           margin: 0 auto;
